@@ -11,6 +11,14 @@ int sum(int a){
   return count;
 }
 
+int product(int a){
+  int count = 1;
+  for(int i = 1; i <= a; i++){
+    count = count * i;
+  }
+  return count;
+}
+
 int main() {
   int input = 0;
 
@@ -18,5 +26,6 @@ int main() {
   cin >> input;
   
   cout <<"\n" << sum(input) << "\n";
+  cout <<"\n" << product(input) << "\n";
   return 0;
 }
